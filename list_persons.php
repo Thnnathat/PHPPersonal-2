@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <body>
     <?php
+    require ("./connect_db.php");
 
-    $servername = "localhost";
-    $username = "cpe1561";
-    $password = "123456789";
-    $dbname = "cpe1561";
-
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    $sql = "SELECT id, f_name, l_name, age, sex, married_status FROM survay";
+    $sql = "SELECT id, f_name, l_name, age, sex, married_status FROM survey";
     $result = $conn->query($sql);
-
 
     // Check connection
     if ($conn->connect_error) {

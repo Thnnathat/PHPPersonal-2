@@ -10,6 +10,9 @@
         <br><input type="submit" value="submit">
     </form>
     <a href = "./list_persons.php" target=_blank>Database</a>
+    <a href = "./show_people.php" target=_blank>Show People</a>
+    <a href = "./edit_people.php" target=_blank>Edit People</a>
+
 </body>
 
 </html>
