@@ -6,18 +6,27 @@
     $name = $_POST["name"];
     $age = $_POST["age"];
     $gender = $_POST["gender"];
-    $marries = $_POST["marries"];
+    $married = $_POST["married"];
 
-    echo "Name: ".$name."<br>";
-    echo "Age: ".$age."<br>";
-    echo "Gender: ".$gender."<br>";
-    echo "Married status: ".$married."<br>";
-
-    if ($age > 15){
-        echo "Old";
+    $prefix = "";
+    if ($gender == "male"){
+        if ($age >= 15){
+            $prefix = "นาย";
+        }else{
+            $prefix = "เด็กชาย";
+        }
     }else{
-        echo "";
+        if ($married == "married"){
+            $prefix = "นาง";
+        }else{
+            if ($age < 15){
+                $prefix = "เด็กหญิง";
+            }else{
+                $prefix = "นางสาว";
+            }
+        }
     }
+    echo "Name: ".$prefix." ".$name;
     ?>
 </body>
 
