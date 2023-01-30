@@ -9,7 +9,7 @@
         Your married status: <input type="radio" name="married" id="">Married<input type="radio" name="married" id="">Unmarried
         <br><input type="submit" value="submit">
     </form>
-    <a href = "./connect_database.php" target=_blank>Database</a>
+    <a href = "./list_persons.php" target=_blank>Database</a>
 </body>
 
 </html>
